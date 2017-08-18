@@ -4,14 +4,7 @@ import base64
 import binascii
 import re
 import abc
-
-try:
-    from functools import singledispatch
-except ImportError:  # pragma: nocover
-    # future: remove when dropping support for Python 3.3
-    # compat: backport of singledispatch module introduced in Python 3.4
-    from singledispatch import singledispatch
-
+from functools import singledispatch
 from falcon import HTTPMissingHeader, HTTPBadRequest
 
 

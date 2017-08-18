@@ -18,7 +18,6 @@ VERSION = get_version(eval(version_line.split('=')[-1]))
 
 INSTALL_REQUIRES = [
     'falcon',
-    'singledispatch',
 ]
 
 try:
